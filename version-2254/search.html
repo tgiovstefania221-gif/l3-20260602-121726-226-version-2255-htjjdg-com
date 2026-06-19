@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索-高分电视剧片库</title>
+  <meta name="description" content="高分电视剧片库搜索页，可按片名、题材、年份、地区和标签查找精选内容。">
+  <meta name="keywords" content="高分电视剧搜索,电视剧片库,剧集搜索,精选内容">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="./index.html" aria-label="高分电视剧">
+      <span class="logo-mark">剧</span>
+      <span class="logo-text">
+        <strong>高分电视剧</strong>
+        <small>精选内容持续更新</small>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link" href="./categories.html">分类</a>
+      <a class="nav-link" href="./ranking.html">排行榜</a>
+      <a class="nav-link active" href="./search.html">搜索</a>
+    </nav>
+    <form class="top-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索片名、题材、地区" aria-label="搜索片名、题材、地区">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+  </div>
+  <nav class="mobile-nav" aria-label="移动导航">
+    <a class="mobile-link" href="./index.html">首页</a>
+    <a class="mobile-link" href="./categories.html">分类</a>
+    <a class="mobile-link" href="./ranking.html">排行榜</a>
+    <a class="mobile-link active" href="./search.html">搜索</a>
+    <form class="mobile-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+  </nav>
+</header>
+<main>
+  <section class="page-hero search-hero">
+    <div>
+      <span class="eyebrow">片库搜索</span>
+      <h1>搜索高分电视剧</h1>
+      <p>输入片名、题材、年份、地区或标签，快速定位对应详情页。</p>
+    </div>
+  </section>
+  <section class="section-block search-page-panel">
+    <form class="big-search" action="./search.html" method="get">
+      <input type="search" name="q" id="search-page-input" placeholder="输入关键词" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <div class="search-results" id="search-results"></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>高分电视剧</strong>
+      <p>高分电视剧、口碑剧集、热门榜单与精选内容持续更新。</p>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+    </div>
+  </div>
+</footer>
+<script src="./assets/js/search-data.js"></script>
+<script src="./assets/js/search.js"></script>
+<script src="./assets/js/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
